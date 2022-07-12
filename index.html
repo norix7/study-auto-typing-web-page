@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>タイトルがタイピングされるWebサイト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <nav>
+      <h2>Keyboad Store</h2>
+      <ul>
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <img src="./images/menu.png" class="menu-icon">
+    </nav>
+
+    <div class="shop-title">
+      <h1>音にこだわる<span class="auto-input"></span></h1>
+      <p>丹念に、そして精密に、打鍵音を意識して作られた<br />キーボードを販売する数少ない専門店です。</p>
+      <a href="#">お問い合わせ</a>
+      <a href="#" class="button">予約注文</a>
+    </div>
+    <img src="./images/pc.png" class="keyboard-img">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    new Typed(".auto-input", {
+      strings: ["キーボード", "タイピング", "入力体験"],
+      typeSpeed: 300,
+      startDelay: 700,
+      backSpeed: 100,
+      backDelay: 900,
+      smartBackspace: true,
+      loop: true,
+    })
+  </script>
+</body>
+</html>
